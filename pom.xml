@@ -12,6 +12,7 @@
 
     <modules>
         <module>web-base</module>
+        <module>statistic</module>
     </modules>
 
     <properties>
