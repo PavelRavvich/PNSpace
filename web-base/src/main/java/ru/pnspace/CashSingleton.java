@@ -12,6 +12,8 @@ import java.util.concurrent.ConcurrentHashMap;
  */
 public class CashSingleton {
 
+    private final static Object lock = new Object();
+
     private Map<Session, List<String>> cash = new ConcurrentHashMap<>();
 
     private static volatile CashSingleton instance;
@@ -19,7 +21,7 @@ public class CashSingleton {
     public static CashSingleton getInstance() {
         CashSingleton localInstance = instance;
         if (localInstance == null) {
-            synchronized (CashSingleton.class) {
+            synchronized (lock) {
                 localInstance = instance;
                 if (localInstance == null) {
                     instance = localInstance = new CashSingleton();
