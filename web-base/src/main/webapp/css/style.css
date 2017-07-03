@@ -1,0 +1,41 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    font-family: Arial;
+    font-size: 14px;
+}
+
+#wrap {
+    width: 800px;
+    margin: 0 auto;
+    padding: 100px 0;
+}
+
+.graph {
+    height: 300px;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    list-style: none;
+    background-color: #EEEEEE;
+    border: 1px solid #CCCCCC;
+}
+
+.graph li {
+    flex-grow: 1;
+    border: 1px solid #EEEEEE;
+    background-color: #0099FF;
+}
+#log {
+    overflow: scroll;
+    overflow-y: visible;
+    min-height: 300px;
+    padding: 10px;
+    border: 1px solid #EEEEEE;
+}

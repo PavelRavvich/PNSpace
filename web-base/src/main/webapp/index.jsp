@@ -3,10 +3,13 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.js"></script>
+    <script language="javascript" type="text/javascript" src="js/websocket.js"></script>
     <title>WebSocket : Chat</title>
 </head>
 <body>
-<h1>WebSocket : Chat</h1>
+<%--<h1>WebSocket : Chat</h1>
 <div style="text-align: center;">
     <form action="">
 
@@ -32,10 +35,20 @@
 
     </form>
 </div>
-<div id="output"></div>
-<script language="javascript" type="text/javascript" src="websocket.js">
+<div id="output"></div>--%>
+<div id="wrap">
+    <ul class="graph">
+    </ul>
+    <form id="form">
+        <label>Балл: </label>
+        <input name="score" type="text">
+        <button id="send">Отправить</button>
+    </form>
+    <div id="log">
 
-</script>
+    </div>
+</div>
+
 
 </body>
 </html>
