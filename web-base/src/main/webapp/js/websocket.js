@@ -23,7 +23,7 @@ function socketDataSend (data) {
 }
 
 function renderToGraph(value) {
-    if (value > 100 || ) {
+    if (value > 100) {
         value = 100;
     }
     $(".graph").append($("<li></li>").css({"height": value + "%"}))
